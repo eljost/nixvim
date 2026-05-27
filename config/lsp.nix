@@ -4,12 +4,13 @@
       lsp = {
         enable = true;
         servers = {
+          dartls.enable = true;
+          gopls.enable = true;
           nil_ls.enable = true;
           pyright.enable = true;
           ruff.enable = true;
-          dartls.enable = true;
-          texlab.enable = true;
           terraformls.enable = true;
+          texlab.enable = true;
         };
       };
 
