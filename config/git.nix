@@ -5,9 +5,14 @@
     };
     keymaps = [
       {
-        key = "<leader>lg";
+        key = "<leader>gg";
         mode = "n";
         action = "<cmd>LazyGit<CR>";
+      }
+      {
+        key = "<leader>gf";
+        mode = "n";
+        action = "<cmd>LazyGitFilter<CR>";
       }
     ];
   };
