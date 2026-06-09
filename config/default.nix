@@ -17,7 +17,7 @@
   ];
 
   config = {
-    # colorschemes.gruvbox.enable = true;
+    colorschemes.gruvbox.enable = true;
 
     # Use Space as leader key
     globals.mapleader = " ";
