@@ -6,7 +6,7 @@
         servers = {
           dartls.enable = true;
           gopls.enable = true;
-          nil_ls.enable = true;
+          nixd.enable = true;
           pyright.enable = true;
           ruff.enable = true;
           terraformls.enable = true;
