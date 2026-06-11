@@ -4,6 +4,20 @@
       # Fuzzy finder
       telescope = {
         enable = true;
+        settings = {
+          defaults = {
+            file_ignore_patterns = [
+              "^.git/"
+              "^.direnv/"
+            ];
+          };
+
+          pickers = {
+            find_files = {
+              hidden = true;
+            };
+          };
+        };
       };
     };
     keymaps = [
