@@ -50,6 +50,21 @@
         mode = "n";
         action = "<cmd>lua vim.lsp.buf.definition()<CR>";
       }
+      {
+        key = "gr";
+        mode = "n";
+        action = "<cmd>lua vim.lsp.buf.rename()<CR>";
+      }
+      {
+        key = "gR";
+        mode = "n";
+        action = "<cmd>lua vim.lsp.buf.references()<CR>";
+      }
+      {
+        key = "K";
+        mode = "n";
+        action = "<cmd>lua vim.lsp.buf.hover()<CR>";
+      }
     ];
   };
 }
