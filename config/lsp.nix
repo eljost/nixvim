@@ -5,7 +5,7 @@
       lsp = {
         enable = true;
         servers = {
-          dartls.enable = true;
+          #dartls.enable = true;
           gopls.enable = true;
           nixd = {
             enable = true;
@@ -37,11 +37,10 @@
 
       none-ls = {
         enable = true;
-        sources.formatting.black = {
-          enable = true;
-        };
-        sources.formatting.dart_format = {
-          enable = true;
+        sources.formatting = {
+          black.enable = true;
+          #dart_format.enable = true;
+          goimports.enable = true;
         };
       };
     };
