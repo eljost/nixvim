@@ -9,6 +9,7 @@
             file_ignore_patterns = [
               "^.git/"
               "^.direnv/"
+              "^vendor/"
             ];
           };
 
