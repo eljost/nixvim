@@ -24,9 +24,7 @@
       {
         key = "<leader>tv";
         mode = "n";
-        #action = "<cmd>ToggleTerm size=100 direction=vertical<CR>";
-        # I got used to having the editor on the right side
-        action = "<cmd>ToggleTerm size=100 direction=vertical<CR> <cmd>wincmd H<CR>";
+        action = "<cmd>ToggleTerm size=100 direction=vertical<CR>";
       }
       {
         key = "<leader>tf";
@@ -36,12 +34,12 @@
       {
         key = "<C-q>";
         mode = "t";
-        action = "<cmd>ToggleTerm <CR>";
+        action = "<cmd>ToggleTerm <CR> <cmd>NoNeckPain<CR>";
       }
       {
         key = "<C-q>";
         mode = "n";
-        action = "<cmd>ToggleTerm <CR>";
+        action = "<cmd>ToggleTerm <CR> <cmd>NoNeckPain<CR>";
       }
       # "Normal mode" for the terminal
       {
