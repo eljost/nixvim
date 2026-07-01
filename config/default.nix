@@ -3,15 +3,16 @@
   # Import all your configuration modules here
   imports = [
     ./bufferline.nix
-    ./diagnostics.nix
-    ./tmux.nix
-    ./lsp.nix
+    ./cmp.nix
     ./debug.nix
+    ./diagnostics.nix
     ./git.nix
+    ./lsp.nix
     ./neotree.nix
+    ./no-neck-pain.nix
     ./terminal.nix
     ./telescope.nix
-    ./cmp.nix
+    ./tmux.nix
     ./todo.nix
   ] ++ [
     #./llm.nix
