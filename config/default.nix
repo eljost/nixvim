@@ -4,17 +4,18 @@
   imports = [
     ./bufferline.nix
     ./diagnostics.nix
-    ./llm.nix
     ./tmux.nix
     ./lsp.nix
     ./debug.nix
-    ./latex.nix
     ./git.nix
     ./neotree.nix
     ./terminal.nix
     ./telescope.nix
     ./cmp.nix
     ./todo.nix
+  ] ++ [
+    #./llm.nix
+    #./latex.nix
   ];
 
   config = {
@@ -25,6 +26,7 @@
 
     opts = {
       number = true;
+      # Only show absolute line number of current line
       relativenumber = true;
       expandtab = true;
       tabstop = 2;
@@ -61,10 +63,13 @@
 
     # From upstream nixpkgs
     extraPlugins = with pkgs.vimPlugins; [
+      # Quick commenting/uncommenting of blocks
       nerdcommenter
     ];
+    # extraPlugins end
 
     keymaps = [
+      # Quickly cycle through buffers
       {
         key = "<Tab>";
         mode = "n";

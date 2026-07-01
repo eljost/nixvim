@@ -1,5 +1,6 @@
 {
   config = {
+    # Treeview of the cwd
     plugins = {
       neo-tree = {
         enable = true;
