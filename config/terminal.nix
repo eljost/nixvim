@@ -24,7 +24,9 @@
       {
         key = "<leader>tv";
         mode = "n";
-        action = "<cmd>ToggleTerm size=100 direction=vertical<CR>";
+        #action = "<cmd>ToggleTerm size=100 direction=vertical<CR>";
+        # I got used to having the editor on the right side
+        action = "<cmd>ToggleTerm size=100 direction=vertical<CR> <cmd>wincmd H<CR>";
       }
       {
         key = "<leader>tf";
