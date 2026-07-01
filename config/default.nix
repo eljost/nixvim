@@ -15,6 +15,7 @@
     ./tmux.nix
     ./todo.nix
   ] ++ [
+    #./overseer.nix
     #./llm.nix
     #./latex.nix
   ];
