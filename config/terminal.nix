@@ -41,9 +41,11 @@
         mode = "n";
         action = "<cmd>ToggleTerm <CR> <cmd>NoNeckPain<CR>";
       }
-      # "Normal mode" for the terminal
+      # Easier acces to normal mode from terminal mode.
+      # Was <ESC> previously, but this lead to issues with
+      # tools like lazygit.
       {
-        key = "<ESC>";
+        key = "<C-n>";
         mode = "t";
         # Double quotes are used here, so \ is not intepreted as
         # escape character.
