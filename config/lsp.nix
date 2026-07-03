@@ -23,7 +23,7 @@
           pyright.enable = true;
           ruff.enable = true;
           terraformls.enable = true;
-          texlab.enable = true;
+          yamlls.enable = true;
         };
       };
 
