@@ -41,7 +41,7 @@
         mode = "n";
         action = "<cmd>ToggleTerm <CR> <cmd>NoNeckPain<CR>";
       }
-      # Easier acces to normal mode from terminal mode.
+      # Easier access to normal mode from terminal mode.
       # Was <ESC> previously, but this lead to issues with
       # tools like lazygit.
       {
