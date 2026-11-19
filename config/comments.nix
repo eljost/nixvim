@@ -1,6 +1,25 @@
 {
   config = {
     keymaps = [
+      {
+        mode = "n";
+        key = "<leader>c<leader>";
+        action.__raw = ''
+          function()
+            vim.cmd("normal " .. vim.v.count1 .. "gcc")
+          end
+        '';
+        options.desc = "Toggle comment";
+      }
+      {
+        mode = "x";
+        key = "<leader>c<leader>";
+        action = "gc";
+        options = {
+          remap = true;
+          desc = "Toggle comment on selection";
+        };
+      }
       # Comment <leader>cc
       {
         mode = "n";
