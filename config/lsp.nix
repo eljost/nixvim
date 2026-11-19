@@ -65,6 +65,11 @@
         mode = "n";
         action = "<cmd>lua vim.lsp.buf.hover()<CR>";
       }
+      {
+        key = "<leader>ca";
+        mode = [ "n" "v" ];
+        action = "<cmd>lua vim.lsp.buf.code_action()<CR>";
+      }
     ];
   };
 }
