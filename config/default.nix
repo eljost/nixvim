@@ -4,6 +4,7 @@
   imports = [
     ./bufferline.nix
     ./cmp.nix
+    ./comments.nix
     ./debug.nix
     ./diagnostics.nix
     ./git.nix
@@ -64,10 +65,7 @@
     # plugins end
 
     # From upstream nixpkgs
-    extraPlugins = with pkgs.vimPlugins; [
-      # Quick commenting/uncommenting of blocks
-      nerdcommenter
-    ];
+    #extraPlugins = with pkgs.vimPlugins; [ ];
     # extraPlugins end
 
     keymaps = [
